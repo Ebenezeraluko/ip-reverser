@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: your-username/your-app
+  IMAGE_NAME: ebenezery/ip-reverser
 
 jobs:
   build-and-update:
