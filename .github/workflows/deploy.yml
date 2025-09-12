@@ -44,13 +44,13 @@ jobs:
       run: |
         sed -i "s|tag: .*|tag: \"${{ steps.tag.outputs.image_tag }}\"|g" helm-chart/values.yaml
     
-    - name: Commit updated values
-      run: |
-        git config --local user.email "ebenezeraluko3@gmail.com"
-        git config --local user.name "eben"
-        git add helm-chart/values.yaml
-        git commit -m "Update staging image tag to ${{ steps.tag.outputs.image_tag }}" || exit 0
-        git push
+   # - name: Commit updated values
+   #   run: |
+   #     git config --local user.email "ebenezeraluko3@gmail.com"
+   #     git config --local user.name "eben"
+   #     git add helm-chart/values.yaml
+   #     git commit -m "Update staging image tag to ${{ steps.tag.outputs.image_tag }}" || exit 0
+   #     git push
     
     #- name: Trigger ArgoCD sync (optional)
     #  run: |
