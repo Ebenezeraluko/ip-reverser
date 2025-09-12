@@ -65,4 +65,3 @@ jobs:
         git add helm-chart/values.yaml
         git commit -m "🚀 Update staging image to latest"
         git push
-g
