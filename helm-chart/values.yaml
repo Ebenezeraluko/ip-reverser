@@ -3,7 +3,7 @@ replicaCount: 2
 image:
   repository: ebenezery/ip-reverser
   pullPolicy: IfNotPresent
-  tag: "reverserapp-latest"
+  tag: "staging-d51aea1-20250912-121005"
 
 service:
   type: ClusterIP
