@@ -52,9 +52,9 @@ jobs:
         git commit -m "Update staging image tag to ${{ steps.tag.outputs.image_tag }}" || exit 0
         git push
     
-    - name: Trigger ArgoCD sync (optional)
-      run: |
-        echo "ArgoCD will automatically detect and sync the changes"
+    #- name: Trigger ArgoCD sync (optional)
+    #  run: |
+    #    echo "ArgoCD will automatically detect and sync the changes"
         # Optional: Trigger immediate sync
         # curl -X POST "${{ secrets.ARGOCD_SERVER }}/api/v1/applications/your-app-staging/sync" \
         #   -H "Authorization: Bearer ${{ secrets.ARGOCD_TOKEN }}"
