@@ -23,7 +23,7 @@ replicas: 2
 
 appName: ip-reverser
 
-port: 80
+port: 8000
 
 configmap:
   name: ip-reverser-configmap-v1
