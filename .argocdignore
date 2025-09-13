@@ -1,0 +1,5 @@
+# .argocdignore file (like .gitignore)
+Pipline
+/app
+*.log
+Dockerfile
