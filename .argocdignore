@@ -2,4 +2,6 @@
 Pipline
 /app
 *.log
+requirements.txt
+reverse_ips.db
 Dockerfile
