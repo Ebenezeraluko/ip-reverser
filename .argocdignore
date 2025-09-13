@@ -1,6 +1,7 @@
 # .argocdignore file (like .gitignore)
 Pipline
-/app
+.github
+app
 *.log
 requirements.txt
 reverse_ips.db
