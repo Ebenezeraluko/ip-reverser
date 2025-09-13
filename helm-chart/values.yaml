@@ -1,11 +1,12 @@
 # deploymentName: deployment-ip-reverse
-# replicas: 2
+# replicaCount: 2
 # image:
-#   repository: ebenezery/ip-reverser:latest
-#   pullPolicy: IfNotPresent
-#   tag: "reverserapp-latest"
+#   repository: ebenezery/ip-reverser
+#   pullPolicy: Always
+#   tag: "latest"
 
 # service:
+#   name: ip-reverser
 #   type: LoadBalancer
 #   port: 80
 #   targetPort: 8000
@@ -18,24 +19,17 @@
 #     cpu: 250m
 #     memory: 256Mi
 
+replicas: 2
 
-deploymentName: deployment-ip-reverse
-replicaCount: 2
+appName: ip-reverser
+
+port: 80
+
+configmap:
+  name: ip-reverser-configmap-v1
+  data:
+    CUSTOM_HEADER: 'This app was deployed with helm!'
+
 image:
-  repository: ebenezery/ip-reverser
-  pullPolicy: Always
-  tag: "latest"
-
-service:
-  name: ip-reverser
-  type: LoadBalancer
-  port: 80
-  targetPort: 8000
-
-resources:
-  limits:
-    cpu: 500m
-    memory: 512Mi
-  requests:
-    cpu: 250m
-    memory: 256Mi
+  name: ebenezery/ip-reverser
+  tag: latest
