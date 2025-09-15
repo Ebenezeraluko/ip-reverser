@@ -44,8 +44,8 @@ jobs:
       run: |
         sed -i "s|tag: .*|tag: \"${{ steps.tag.outputs.image_tag }}\"|g" helm-chart/values.yaml
     
-   - name: Commit updated values
-     run: |
+    - name: Commit updated values
+      run: |
        git config --local user.email "ebenezeraluko3@gmail.com"
        git config --local user.name "eben"
        git add helm-chart/values.yaml
