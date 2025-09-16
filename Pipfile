@@ -7,7 +7,7 @@ name = "pypi"
 fastapi = "==0.104.1"
 sqlalchemy = "==2.0.23"
 uvicorn = {version = "==0.24.0", extras = ["standard"]}
-databases = {version = "==0.8.0", extras = ["sqlite"]}
+databases = {version = "==0.9.0", extras = ["sqlite"]}
 
 [dev-packages]
 

@@ -1,13 +1,13 @@
 from fastapi import FastAPI, Request, Depends, HTTPException
 from sqlalchemy.orm import Session
-import models
-from database import get_db, init_db
+from . import models
+from .database import get_db, init_db
 from datetime import datetime
 import logging
 
 # Initialize database
 init_db()
-from app.models import Base
+
 app = FastAPI(title="IP Reverser API", version="1.0.0")
 
 # Configure logging
