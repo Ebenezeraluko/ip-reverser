@@ -11,4 +11,4 @@ configmap:
 
 image:
   name: ebenezery/ip-reverser
-  tag: "staging-93ef40c"
+  tag: "staging-5d24ef2"
