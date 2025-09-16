@@ -3,7 +3,7 @@
 # image:
 #   repository: ebenezery/ip-reverser
 #   pullPolicy: Always
-#   tag: "staging-f220f5c"
+#   tag: "staging-a16de38"
 
 # service:
 #   name: ip-reverser
@@ -32,4 +32,4 @@ configmap:
 
 image:
   name: ebenezery/ip-reverser
-  tag: "staging-f220f5c"
+  tag: "staging-a16de38"
