@@ -1,24 +1,3 @@
-# deploymentName: deployment-ip-reverse
-# replicaCount: 2
-# image:
-#   repository: ebenezery/ip-reverser
-#   pullPolicy: Always
-#   tag: "staging-a16de38"
-
-# service:
-#   name: ip-reverser
-#   type: LoadBalancer
-#   port: 80
-#   targetPort: 8000
-
-# resources:
-#   limits:
-#     cpu: 500m
-#     memory: 512Mi
-#   requests:
-#     cpu: 250m
-#     memory: 256Mi
-
 replicas: 2
 
 appName: ip-reverser
